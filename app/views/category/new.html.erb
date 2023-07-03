@@ -1,0 +1,11 @@
+<div>
+  <%= link_to category_index_path do %>
+    <span>&#8701;</span>
+  <% end %>
+</div>
+<h2>Create New Category</h2>
+<%= button_to "Sign out", destroy_user_session_path, method: :delete %>
+
+<div>
+  <%= render "form", category: @category %>
+</div>
