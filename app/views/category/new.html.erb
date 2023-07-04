@@ -1,11 +1,11 @@
-<div>
-  <%= link_to category_index_path do %>
-    <span>&#8701;</span>
-  <% end %>
+<div class='navbar navbar-login'>
+<%= stylesheet_link_tag "categories" %>
+<%= link_to 'Back', category_index_path, class: 'back-link' %>
+<h2 style="color: white; background-color: transparent;">CATEGORIES</h2>
+    <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "sign_out text_white" %>
 </div>
-<h2>Create New Category</h2>
-<%= button_to "Sign out", destroy_user_session_path, method: :delete %>
+<h2 class='new-category-header'>Create New Category</h2>
 
-<div>
+<div class='form-wrapper'>
   <%= render "form", category: @category %>
 </div>

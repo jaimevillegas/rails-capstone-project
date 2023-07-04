@@ -33,3 +33,19 @@
   justify-content: center;
   align-items: center;
 }
+
+.transaction-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.center {
+  margin: 50px;
+}
+
+.btn-transaction {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

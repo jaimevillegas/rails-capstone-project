@@ -18,3 +18,29 @@
   text-decoration: none;
   background-color: transparent;
 }
+
+.add_categ_btn {
+  display: block;
+  margin: 50px;
+}
+
+.new-category-btn {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-category-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.form-wrapper {
+  margin: 30px;
+}
+
+.name-container p {
+  text-decoration: none;
+  background-color: transparent;
+}

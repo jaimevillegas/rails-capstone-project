@@ -15,12 +15,13 @@ class ProductController < ApplicationController
   end
 
   def create
-    @product = Product.new(product_params)
-    @product.user_id = current_user.id
-    @category = Category.find(params[:category_id])
-    @category.product << @product
+    @product = Product.new(user_id: current_user.id, **product_params)
+    # @product.user_id = current_user
+    # @category = Category.find(params[:category_id])
+    # @category.product << @product
 
     if @product.save
+      @category_product = CategoryProduct.create(category_id: params[:category_id], product_id: @product.id)
       redirect_to category_product_index_path(@category), notice: 'Product was successfully created.'
     else
       render :new, status: :unprocessable_entity
