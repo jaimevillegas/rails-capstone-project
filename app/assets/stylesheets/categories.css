@@ -1,0 +1,20 @@
+.category {
+  margin: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 2px 2px 2px 1px #d8d8d8;
+}
+
+.category-icon {
+  width: 50%;
+  background-color: white;
+}
+
+* {
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+}

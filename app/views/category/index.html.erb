@@ -1,12 +1,9 @@
-<section class="categories-section">
-  <div class="header">
-    <div class="menu clickable">
-      <div class="item1"></div>
-      <div class="item2"></div>
-      <div class="item3"></div>
-    </div>
-    <h2 class="text_white categ_title">CATEGORIES</h2>
+<div class='navbar navbar-login'>
+<%= stylesheet_link_tag "categories" %>
+<%= link_to 'Back', splash_screen_path, class: 'back-link' %>
+<h2 style="color: white; background-color: transparent;">CATEGORIES</h2>
     <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "sign_out text_white" %>
+</div>
   </div>
   <div class="categories">
   <% if @categories.length == 0 %>
