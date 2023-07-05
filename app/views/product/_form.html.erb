@@ -1,0 +1,27 @@
+<div class="forms_section">
+  <%= bootstrap_form_with(model: product, url: category_product_index_path) do |form| %>
+    <% if product.errors.any? %>
+      <div style="color: red">
+        <h2><%= pluralize(product.errors.count, "error") %> prohibited this exchange from being saved:</h2>
+
+        <ul>
+          <% product.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= form.text_field :name, placeholder: "Enter the transaction's name" %>
+    </div>
+
+    <div class="field">
+      <%= form.number_field :amount, min: 0, placeholder: "Enter the transaction's amount" %>
+    </div>
+
+    <div class="field btn-transaction">
+      <%= form.submit 'Add New Transaction', class: "btn btn-primary bg_col_blue new_transaction_btn" %>
+    </div>
+  <% end %>
+</div>

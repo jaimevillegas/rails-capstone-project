@@ -100,6 +100,8 @@ GEM
       xpath (~> 3.2)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
+    cssbundling-rails (1.2.0)
+      railties (>= 6.0.0)
     date (3.3.3)
     debug (1.8.0)
       irb (>= 1.5.0)
@@ -163,11 +165,14 @@ GEM
     nio4r (2.5.9)
     nokogiri (1.15.2-x64-mingw-ucrt)
       racc (~> 1.4)
+    nokogiri (1.15.2-x86_64-linux)
+      racc (~> 1.4)
     orm_adapter (0.5.0)
     parallel (1.23.0)
     parser (3.2.2.3)
       ast (~> 2.4.1)
       racc
+    pg (1.5.3)
     pg (1.5.3-x64-mingw-ucrt)
     popper_js (2.11.7)
     public_suffix (5.0.1)
@@ -321,6 +326,7 @@ GEM
 
 PLATFORMS
   x64-mingw-ucrt
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
@@ -329,6 +335,7 @@ DEPENDENCIES
   bullet
   cancancan
   capybara
+  cssbundling-rails (~> 1.2)
   debug
   devise
   font-awesome-sass (~> 6.4.0)
@@ -352,4 +359,4 @@ RUBY VERSION
    ruby 3.2.2p53
 
 BUNDLED WITH
-   2.4.13
+   2.4.15
