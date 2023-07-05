@@ -1,12 +1,12 @@
 <div class='navbar navbar-login'>
 <%= link_to 'Back', splash_screen_path, class: 'back-link' %>
 <h2 style="color: white; background-color: transparent;">REGISTER</h2>
-<%= bootstrap_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-<button onClick=submit >
-  Next
+<button>
+  Register
 </button>
 </div>
 
+<%= bootstrap_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
@@ -26,6 +26,10 @@
 
   <div class="field">
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  </div>
+
+  <div class='actions'>
+    <%= f.submit "Sign Up" %>
   </div>
 
 <% end %>

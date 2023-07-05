@@ -1,15 +1,21 @@
+
+a {
+  text-decoration: none;
+}
+
 .category {
   margin: 10px;
+  padding: 20px;
   background-color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   box-shadow: 2px 2px 2px 1px #d8d8d8;
 }
 
 .category-icon {
-  width: 50%;
+  width: 40%;
   background-color: white;
 }
 

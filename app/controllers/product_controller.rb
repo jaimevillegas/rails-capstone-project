@@ -22,7 +22,7 @@ class ProductController < ApplicationController
 
     if @product.save
       @category_product = CategoryProduct.create(category_id: params[:category_id], product_id: @product.id)
-      redirect_to category_product_index_path(@category), notice: 'Product was successfully created.'
+      redirect_to category_product_index_path, notice: 'Product was successfully created.'
     else
       render :new, status: :unprocessable_entity
     end
