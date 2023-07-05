@@ -74,7 +74,7 @@ You can watch the live demo here! https://www.loom.com/share/5bbbb5dfd2014ef698d
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Currently, I don't have a live version of the project. I will let you know ASAP when it is available!
+https://rails-capstone-project.onrender.com/
 
 <p align="right"><a href="#readme-top">👆</a></p>
 
