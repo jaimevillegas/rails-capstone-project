@@ -85,3 +85,5 @@ production:
   database: rails_capstone_project_production
   username: rails_capstone_project
   password: <%= ENV["RAILS_CAPSTONE_PROJECT_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
+
