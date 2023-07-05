@@ -1,9 +1,9 @@
 <div class='navbar navbar-login'>
 <%= link_to 'Back', splash_screen_path, class: 'back-link' %>
 <h2 style="color: white; background-color: transparent;">LOG IN</h2>
-<button>
+<span style='background-color: transparent; color: white;'>
   Log In
-</button>
+</span>
 </div>
 
 <%= bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
